@@ -6,9 +6,9 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const jwtSecret = 'secret_key'; 
+const jwtSecret = ''; 
 
-mongoose.connect('mongodb+srv://ndubuisiaso:J765uGBzds2LYKme@cluster0.y9ipvbd.mongodb.net/votar-auth', {
+mongoose.connect('', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -25,8 +25,8 @@ const User = mongoose.model('User', userSchema);
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-     user: 'votarhq@gmail.com',
-    pass: 'rgifyjwgrdvzczjj'
+     user: '',
+    pass: ''
   },
 });
 
